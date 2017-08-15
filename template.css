@@ -15,6 +15,43 @@
   width: 33%;
 }
 
+/***************************/
+
+#containeriam {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#leftiam {
+  width: 25%;
+  margin-right: 20px;
+}
+#middleiam {
+  width: 50%;
+  margin-right: 20px;
+}
+#rightiam {
+  width: 25%;
+}
+
+/**************************/
+
+#containerido {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#leftido {
+  width: 50%;
+  margin-right: 20px;
+}
+
+#rightido {
+  width: 50%;
+}
+
+/*************************/
+
 body {
     background-color: blanchedAlmond;
 }
@@ -62,6 +99,10 @@ a:hover {
     color: brown;
     background-color: transparent;
     /*text-decoration: underline;*/
+}
+
+a.target:hover {
+    color: black;
 }
 
 li {

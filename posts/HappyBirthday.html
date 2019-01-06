@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>What I think</title>
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="http://clipartix.com/wp-content/uploads/2017/06/Sunshine-free-sun-clipart-clip-art-images-and-7.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div>
+
+    <p align="center"><img src="../pictures/kite5new.JPG" alt="Vivek looking at the sky" width=750 height=400
+        style='height: 100%; width: 100%; object-fit: contain'></p>
+
+<p align="center" style="font-size:350%;"><a href="../index.html" style="color:brown;">I think</a></p>
+
+<br>
+<hr>
+</div>
+
+<h3 align="center">HappyBirthday | <span style="color:grey;">January 6th, 2019</span></h3>
+
+  <hr>
+
+  <div id="containeriam">
+      <div id="leftiam" align="center">
+      </div>
+
+      <div id="middleiam" align="center">
+
+          <!-- Post name, date posted, post, Vivek -->
+          <p align="left" style="font-size:300%;">HappyBirthday</p>
+          <p align="left">I played with a lot of toys when I was younger. As time passed, I bought less toys...but I still feel like
+            I'm playing with toys.
+          </p>
+          <p align="left">I suppose, instead of buying them, I build toys now.
+          </p>
+          <p align="left">---
+          </p>
+          <p align="left">Freshmen year of college, I met a lot of people. My Facebook friends list saw a growth spike, as did those of the
+            people I met. For simplicity, let's say I received W birthday wishes on my Facebook wall on my next birthday after college started.
+          </p>
+          <p align="left">Due to the demands of school and my own desires, I met less and less people and I met with less and less friends from that
+            initial group. As a result, I received fractions of W birthday wishes on the following birthdays.
+          </p>
+          <p align="left">A thought I had when thinking about this observation:
+          </p>
+          <p align="left">"<span style="color:brown;"><em>Suppose I was a person who unfortunately based my self-esteem on the number of people
+            who post happy birthday messages on my Facebook every year. Additionally, suppose I am aware of the trend that meeting and interacting
+            with less people results in less birthday posts. How would I go about maximizing the happy birthdays I received [within the domain of Facebook]?</em></span>"
+          </p>
+          <p align="left">The thought began as a "What if...", but the more I thought about it, the funnier of a hypothetical situation it sounded. My next shower was spent
+            exploring how one could really go about this problem.
+          </p>
+          <p align="left">We have the relationship of "more interactions => more wishes", so it makes sense to increase our interactions.
+            One way to go about this is to simply wish others on their birthdays. Some people will wish you on your birthday because they want
+            to genuinely wish you, others might wish you because they remember you wishing them on theirs and want to return the kindness.
+          </p>
+          <p align="left">Another idea is to physically meet and engage with more people than we do currently. However, this approach is constrained by our
+            finite energy and time. We could very well host massive potlucks every month, rotating out the guests in a way that optimizes how many unique
+            people attend and how repeatedly we interact with each person to improve our chances of receiving a birthday wish, but this introduces
+            more logistical issues.
+          </p>
+          <p align="left">To keep our problem simple and focused for our own sake of simplicity and focus, let's apply a constraint of minimizing our own interactions.
+          </p>
+          <p align="left">Now, the problem can be restated as,
+          </p>
+          <p align="left">"<span style="color:brown;"><em>How do I maximize my birthday wishes with respect to the force of 'I wish you-you might wish me too' while minimizing
+            my own efforts?</em></span>"
+          </p>
+          <p align="left">The best idea that stuck was to automate the process of us posting happy birthday wishes to the walls of our Facebook
+            friends.
+          </p>
+          <p align="left">Have we gone too far with using code to automate processes? I say yes, but I also take lengthy showers, so we must keep going.
+          </p>
+          <p align="left">---
+          </p>
+          <p align="left">A generic description of the solution: A tool that would check Facebook each day for that day's birthdays and then post wishes
+            on their walls without any input from me beyond construction of the tool. So...how do we do this?
+          </p>
+          <p align="left">My first idea was to create a Chrome extension that would run once every 24 hours. The idea was to make an HTTP request to
+            Facebook, scrape the returned webpage data for the HTML that corresponds to the little birthday button on our home page, parse that data for the
+            names of today's birthdays and then programmatically post the wishes to their walls.
+          </p>
+          <p align="left">Sounds good, but this idea had a few issues:
+            <br>
+            <strong>• I need special permissions (CORS Headers) in the Chrome extension to access the site data of a website that isn't currently open in my browser.</strong>
+            <br>
+            Solution? Either I set up my CORS, or
+            I keep the Facebook website open permanently. I had final exams to study for, so I was looking for a quick solution -- I couldn't learn CORS at the time and
+            keeping Facebook open permanently seemed like a very distractive decision to make.
+            <br><br>
+            <strong>• I needed my computer to be open and logged on to wifi once everyday in order for the extension to do its job. I don't like the idea of having to open my computer everyday strictly for this purpose -- it doesn't really minimize my own efforts,
+            as we are looking to do with this problem, because I could just open my computer and type the wish out myself daily.</strong>
+            <br>
+            Solution? Create an AWS Lambda function with the necessary code and attach a CRON job so that it runs every 24 hours, but this wasn't going to happen
+            because of the above issue. Setting up the tool on an automatic server that runs regardless of my actions is the ideal solution, but is just not possible
+            at the moment. No matter!
+          </p>
+          <p align="left">Next idea: Instead of collecting the webpage data, why not just use Facebook's provided APIs? If Facebook already has some getTodayBirthday function,
+            let's just implement that into our script!
+          </p>
+          <p align="left">Result:
+            <br>There wasn't any getTodayBirthday function, sadly.
+            <br>
+            For me to receive the birthdays of my friends, I would have needed to create an app hosted on Facebook and then have all my friends
+            authorize the app to collect their birthdate data. I'm not interested in pinging all the people on my friends list to have them authorize my app -- that itself is a significant amount of work, but
+            this solution would definitely get the job done. If I was interested and patient enough to go through the whole list, the problem would be completely solved...until I added new friends on Facebook.
+            <br>
+            This app built on the API would require me to request all future Facebook friends to authorize the app. As the friend list grows, so does my total work expended. We want to minimize work, so let's keep thinking.
+          </p>
+          <p align="left">---
+          </p>
+          <p align="left">The idea I brought to life: Build an app on my phone that stores names, phone numbers, and birthdates, checks daily for that day's birthdays,
+            then sends SMS messages to the recipients.
+          </p>
+          <p align="left">
+          </p>
+          <p align="left">
+          </p>
+          <p align="left">
+          </p>
+          <p align="left">
+          </p>
+          <p align="left">
+          </p>
+
+          <br>
+          <p align="left">Vivek</p>
+          <!-- $ HappyBirthday -->
+    </div>
+
+<div id="rightiam" align="center"></div>
+
+</div>
+<!-- Close containeriam -->
+
+<br><br>
+
+  <p align="center">
+    <a href="PorNo.html">PorNo!</a> |
+    <a href="babywords.html">Baby Words</a>
+  </p>
+    <p align="center">
+      <a href="../ithink.html#2018" style="color:brown;">Contents</a>
+    </p>
+
+<br><br>
+
+
+<!-- http://fontawesome.io/icons/ -->
+<hr>
+<br>
+  <div>
+    <li align="center">
+      <a href="https://github.com/mrvivacious" target="_blank"><i class="fa fa-github" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://www.linkedin.com/in/vivek-bhookya-b9338013b/" target="_blank"<i class="fa fa-linkedin" style="font-size:24px; padding:5px"></i><a/>
+      <a href="https://instagram.com/mrvivacious" target="_blank"><i class="fa fa-instagram" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://bonafidegradehustlers.wordpress.com" target="_blank"><i class="fa fa-wordpress" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://www.youtube.com/playlist?list=LLbXFsP9kfnG3cUVvuz2v6HA" target="_blank"><i class="fa fa-youtube-play" style="font-size:24px; padding:5px"></i></a>
+      <a href="../files/resume.pdf" target="_blank"><i class="fa fa-file-text" style="font-size:24px; padding:5px"></i></a>
+    </li>
+  </div>
+
+  <br>
+  <p align="center"><em>Thank you for visiting!</em><br>Vivek Bhookya</p>
+
+</body>
+</html>

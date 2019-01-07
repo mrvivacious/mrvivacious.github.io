@@ -52,6 +52,21 @@
   width: 50%;
 }
 
+/********* SIDE BY SIDE *****************/
+#side2side {
+  display: flex;
+}
+#leftSide {
+  width: 50%;
+  margin-right: 20px;
+}
+
+#rightSide {
+  width: 50%;
+}
+/********* SIDE BY SIDE *****************/
+
+
 #exp {
   height: 100%;
   width: 100%;
@@ -72,6 +87,9 @@
   width: 25%;
 }
 
+#url {
+  color: brown;
+}
 /*************************/
 
 body {

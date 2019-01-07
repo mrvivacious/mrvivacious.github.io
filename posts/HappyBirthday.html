@@ -13,7 +13,7 @@
 <body>
   <div>
 
-    <p align="center"><img src="../pictures/kite5new.JPG" alt="Vivek looking at the sky" width=750 height=400
+    <p align="center"><img src="../pictures/iceCreamNeon.jpg" alt="Neon 'ICE CREAM OPEN' sign from Coldstone Creamery" 
         style='height: 100%; width: 100%; object-fit: contain'></p>
 
 <p align="center" style="font-size:350%;"><a href="../index.html" style="color:brown;">I think</a></p>
@@ -118,15 +118,122 @@
           <p align="left">The idea I brought to life: Build an app on my phone that stores names, phone numbers, and birthdates, checks daily for that day's birthdays,
             then sends SMS messages to the recipients.
           </p>
-          <p align="left">
+          <p align="left">This method isn't issue-free, either, but the problems presented with a mobile app solution weren't greatly debilitating:
+            <br><br>
+            <strong>Yeah, I still have to manually enter contact info for all the people I desire to keep in my birthday list</strong>, but this can be remedied by me handing my phone to people
+            when I meet them with the app open. Less composite work on my side in terms of updating the birthday list as well as with remembering birthdays [because the phone will for me].
+            <br><br>
+            In terms of phone usage, I do have my phone on everyday, so I don't have to worry about missing days should this habit remain. Suppose I decide to turn off my phone
+            or I travel to some part of the world and lose data for a few days -- I could add a few more lines of code that queue the recipients to message if SMS fails and have the app
+            run through the queue once I'm back online.
+            <br><br>
+            E Z P Z.
           </p>
-          <p align="left">
+          <p align="left">---
           </p>
-          <p align="left">
+          <p align="left">As I use an Android phone and was working in time constraints, I decided to build the app in Android (Java and XML).
+            Should I build a small tool like this again in the future, I'll explore other mobile frameworks (such as React Native) to build the tool in.
+            <br>
+            Sure, of course, it would be easiest to use what I am most familiar with even in the future, but it is important to explore different technologies and frameworks in order to see
+            what capabilites are present elsewhere. Maybe it's easier to build certain apps with another framework? Perhaps I will see that Android is really the best way to go about
+            building Android apps even after compromising the cross-platform ease offered with React? The only way to answer these questions is with experience, and so the value in
+            exploration can be seen.
           </p>
-          <p align="left">
+          <p align="left">As Android Studio had it, the way my XML looked in the preview was a bit misplaced on my actual device. Classic Android, thank you for the warm welcome back.
+            I decided that the misaligned input fields gave the app a sense of personality and decided to move on [after having spent significant time playing with the layout and alignment].
           </p>
-          <p align="left">
+
+          <div id="side2side">
+            <div id="leftSide">
+              <img src="../pictures/HB_preview.jpg" alt="The rendered XML in Android Studio. The elements sit on horizontal planes nicely." width="100%">
+            </div>
+            <div id="rightSide">
+              <img src="../pictures/HB_actual.jpg" alt="The XML on the physical phone. The month input box sits higher than the day input box, which is both non-linear and does not look like the preview, haha." width="100%">
+            </div>
+          </div>
+
+
+          <p align="left">There were a few benchmarks we needed to meet to ensure that this app could work sufficiently on Android:
+            <br>
+            <strong>• Can I send SMS programmatically through Android?</strong>
+            <br>
+            <strong>• How should I go about saving the user data? What if I need to modify existing data, such as changing a recipient's phone number?</strong>
+            <br>
+            <strong>• The app needs to run periodically, how is this implemented?</strong>
+          </p>
+          <p align="left">It didn't take long to learn that yes, SMS can be sent programmatically, as well as <a href="https://stackoverflow.com/questions/26311243/sending-sms-programmatically-without-opening-message-app" target="_blank" style="color:brown;">how</a>. Awesome!
+            Let's keep going!
+          </p>
+          <p align="left">One way of saving data to disk with Android is to write to Shared Preferences. I tried to learn sharedPrefs a year and a half ago, but it looks
+            like Android documentation has gotten a lot better / I've gotten better at reading documentation because I was able to do now (implement sharedPrefs properly) what I couldn't learn to do then.
+          </p>
+          <p align="left">Shared preferences ended up being a small disaster. With sharedPrefs, I can save Strings or a List of Strings to disk -- the individual
+            Strings were modifiable and can be overwritten but the Lists supposedly were non-mutable.
+            <br>
+            Suppose I add a person to the app. I save them as something like KEY:VALUE as DATE:PhNumber+Name, so I know whose birthday it is.
+            <br>
+            Let's say I add another person who has the same birthday as another person. I would read disk and realize that I already have a sharedPrefs data
+            for this date, so I can grab that existing person, add her/him and this new person to a list, and overwrite that sharedPrefs data with this list.
+            <br>
+            Now! If I want to add yet another person, I couldn't! Because my list was instantiated with two individuals, it shall remain that way, existing only for me to read from.
+            What will I do when I want to add at least three people to the same birthday? And what if a friend changes a phone number, how should I update the phone number when I can't change the list?
+          </p>
+          <p align="left">Suddenly, on the scene, enters a new character: File input-output.
+          </p>
+          <p align="left">Using file IO, I can forego sharedPrefs altogether and instead create a .txt file for each day of the year. In that txt file,
+            I decided to keep a format of one person's data per line in the format Name/PhNumber. Now, in the code, I just open the file corresponding to today's date, and while reading it line-by-line, SMS each recipient.
+            Should I need to modify existing data, I can just open the file in a text-editor on my phone, manually overwrite whatever I want, and save the file. Very easy and convenient, compared to me having to set up
+            an additional interface and functionality for editing if I had decided to keep Shared Preferences.
+          </p>
+          <p align="left">Finally, all we have left is configuring the app to run periodically.
+          </p>
+          <p align="left">I added a service activity to the app so that it can run in the background once turned on, but
+            Android seems to have updated the way services work since I last interacted with them because I found my app's onDestroy() getting called over and over and over once I would close the app.
+            <br>
+            Maybe my service was configured incorreclty? Whatever the case, I use my phone for an alarm, so I know there is a way to run periodic operations with Android.
+          </p>
+          <p align="left">Further digging brought me to the AlarmManger class. I just schedule an intent to fire at an interval of M milliseconds and
+            that's the show! Or, it had looked like.
+            <br>
+            One sunset and sunrise at a university library later, I could not get the alarms to perform as desired. My app kept getting killed off
+            upon me leaving the app to go to the home screen or closing the app in the background, contrary to what I read online and in documentation. My
+            implementation was definitely wrong and I was horribly tired, so I headed home.
+          </p>
+          <p align="left">On the bright side, I finally saw the sun after a few days of poor sleep-study scheduling habits. I enjoyed whatever vitamin D
+            I could scrape naturally after relying on milk for so long.
+          </p>
+
+            <img src="../pictures/bardeen.jpg" alt="Bardeen quad, the lawn and buildings illuminated by the 9 AM December sun" width="100%">
+
+
+          <p align="left">---
+          </p>
+          <p align="left">To accomplish the periodic operationality, Samsung has a neat little app called <a href="https://www.sammobile.com/apk/routines/" target="_blank" id="url">Routines</a>.
+            <br>
+            Using Samsung Routines, I can configure all types of processes to execute on certain events, such as the opening of an app when the phone
+            clock reads a specific time. A hacky and opportune solution, but a simple solution it is.
+          </p>
+          <p align="left">---
+          </p>
+          <p align="left"><a href="https://github.com/mrvivacious/HappyBirthdayAutomated" target="_blank" style="color:brown;">HappyBirthday</a>.
+          </p>
+          <p align="left">A solution to the problem of optimizing birthday wishes to effort expended.
+          </p>
+          <p align="left">Is it an app? It looks like one, it's built like one, and a dissection of it shows that yes, HappyBirthday is an app.
+          </p>
+          <p align="left">HappyBirthday doesn't feel like an app, though. It feels like a toy, like a LEGO that once built, sits there as you wonder what to do with it now.
+          </p>
+          <p align="left">I still learned (sharedPrefs, file IO, design choices, ...) during the build process, but this app is an unlikely candidate
+            for my resume. Which is fine.
+          </p>
+          <p align="left">I built HappyBirthday because I wanted to, and I enjoyed doing it. It was fun and I look forward
+            to doing something similar again. I wouldn't call this software development, or computer science, or even a solution, even though
+            the original purpose was to solve a problem.
+          </p>
+          <p align="left">This is just fun. Another manifestation of me in the having fun process. Any other name doesn't justify what HappyBirthday feels
+            to me.
+          </p>
+          <p align="left">I think that of everything, this is the most important. That HappyBirthday was fun.
           </p>
 
           <br>
@@ -142,8 +249,8 @@
 <br><br>
 
   <p align="center">
-    <a href="PorNo.html">PorNo!</a> |
-    <a href="babywords.html">Baby Words</a>
+    <a href="">tbd</a> |
+    <a href="SpeedDial.html">SpeedDial</a>
   </p>
     <p align="center">
       <a href="../ithink.html#2018" style="color:brown;">Contents</a>

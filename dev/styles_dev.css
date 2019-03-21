@@ -24,15 +24,15 @@
   display: flex;
 }
 #leftiam {
-  width: 25%;
+  width: 20%;
   margin-right: 20px;
 }
 #middleiam {
-  width: 50%;
+  width: 60%;
   margin-right: 20px;
 }
 #rightiam {
-  width: 25%;
+  width: 20%;
 }
 
 /**************************/
@@ -149,6 +149,10 @@ a.target:hover {
 
 li {
   list-style-type: none;
+}
+
+#metadata {
+  color: deepPink;
 }
 
 .fa-github:hover {

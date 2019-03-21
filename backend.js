@@ -5,10 +5,14 @@
 //
 // @author Vivek Bhookya
 
-let devLog = document.getElementById("devLog");
-
-
+// Function recolor
+// Randomly selects a color from the list and sets
+//  the "Dev log" text on the homepage (index.html) color
+//  to this random color
 function recolor() {
+  // The element we want to change the color of
+  let devLog = document.getElementById("devLog");
+
   // Thank you,
   // https://en.wikipedia.org/wiki/Web_colors
   let colors = [
@@ -23,5 +27,6 @@ function recolor() {
   devLog.style.color = randomColor;
 }
 
-
+// Rotate the colors every 400 milliseconds to give a
+//  "rainbow" effect
 setInterval(recolor, 400);

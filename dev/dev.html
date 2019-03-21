@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>mrvivacious</title>
+  <link href="styles_dev.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="http://clipartix.com/wp-content/uploads/2017/06/Sunshine-free-sun-clipart-clip-art-images-and-7.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- Thank you,  -->
+  <!-- https://www.html5canvastutorials.com/advanced/html5-canvas-rain-effect/ -->
+  <!-- https://stackoverflow.com/questions/20327390/html5-canvas-over-all-elements -->
+  <canvas id="canvas" style="position: absolute; z-index: -1;"></canvas>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script type="text/javascript">
+
+      $(document).ready(function() {
+        var canvas = $('#canvas')[0];
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+          var w = canvas.width;
+          var h = canvas.height;
+          ctx.strokeStyle = 'rgba(174,194,224,0.5)';
+          ctx.lineWidth = 2;
+          ctx.lineCap = 'round';
+
+          var init = [];
+          var maxParts = 1000;
+          for (var a = 0; a < maxParts; a++) {
+            init.push({
+              x: Math.random() * w,
+              y: Math.random() * h,
+              l: Math.random() * 1,
+              xs: -4 + Math.random() * 4 + 2,
+              ys: Math.random() * 10 + 10
+            })
+          }
+
+          var particles = [];
+          for (var b = 0; b < maxParts; b++) {
+            particles[b] = init[b];
+          }
+
+          function draw() {
+            ctx.clearRect(0, 0, w, h);
+            for (var c = 0; c < particles.length; c++) {
+              var p = particles[c];
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(p.x + p.l * p.xs, p.y + p.l * p.ys);
+              ctx.stroke();
+            }
+            move();
+          }
+
+          function move() {
+            for (var b = 0; b < particles.length; b++) {
+              var p = particles[b];
+              p.x += p.xs;
+              p.y += p.ys;
+              if (p.x > w || p.y > h) {
+                p.x = Math.random() * w;
+                p.y = -20;
+              }
+            }
+          }
+
+          setInterval(draw, 30);
+
+        }
+      });
+    </script>
+
+  <div style="z-index:99 float:left;">
+    <div>
+    <br>
+    <p align="center" style="font-size:350%;">@mrvivacious</p>
+    <p align="center"><a href="../index.html"><em>Home</em></a></p>
+
+    <hr>
+  </div>
+
+  <!-- Open status box -->
+  <div id="containeriam">
+
+    <div id="leftiam" align="center"></div>
+
+    <div id="middleiam" align="left">
+      <p>Welcome to the dev logs</p>
+      <p>Click on an application's name to visit its detail page</p>
+      <p><a href="dev_showcase.html">Click here to visit the showcase</a></p>
+
+      <br>
+      <hr>
+      <br>
+
+      <p><a href="dev_PorNo.html">PorNo! Android: <span style="color:red;">Dead</span></p>
+      <br>
+      <p><a href="dev_PorNo.html">PorNo! Chrome extension: <span style="color:red;">Dead</span></p>
+      <br>
+      <p><a href="dev_SpeedDial.html">SpeedDial 0.0.1.0: <span style="color:green;">Live</span></p>
+      <br>
+      <p><a href="dev_LikeFree.html">LikeFree 0.0.6.0: <span style="color:green;">Live</span></p>
+    </div>
+
+    <div id="rightiam" align="center"></div>
+
+  </div>
+  <!-- Close status box -->
+
+  <br><br>
+
+  <hr>
+
+  <br>
+
+<!-- http://fontawesome.io/icons/ -->
+  <div>
+    <li align="center">
+      <a href="https://github.com/mrvivacious" target="_blank"><i class="fa fa-github" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://www.linkedin.com/in/vivek-bhookya-b9338013b/" target="_blank"<i class="fa fa-linkedin" style="font-size:24px; padding:5px"></i><a/>
+      <a href="https://instagram.com/mrvivacious" target="_blank"><i class="fa fa-instagram" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://bonafidegradehustlers.wordpress.com" target="_blank"><i class="fa fa-wordpress" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://www.youtube.com/playlist?list=LLbXFsP9kfnG3cUVvuz2v6HA" target="_blank"><i class="fa fa-youtube-play" style="font-size:24px; padding:5px"></i></a>
+      <a href="../files/resume.pdf" target="_blank"><i class="fa fa-file-text" style="font-size:24px; padding:5px"></i></a>
+    </li>
+  </div>
+
+  <br>
+  <p align="center"><em>Thank you for visiting!</em><br>Vivek Bhookya</p>
+</div>
+</body>
+</html>

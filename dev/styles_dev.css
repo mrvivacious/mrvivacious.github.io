@@ -1,0 +1,176 @@
+#containerimg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#leftimg {
+  width: 33%;
+  margin-right: 20px;
+}
+#middleimg {
+  width: 33%;
+  margin-right: 20px;
+}
+#rightimg {
+  width: 33%;
+}
+
+/***************************/
+/* I am CSS */
+
+#containeriam {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#leftiam {
+  width: 25%;
+  margin-right: 20px;
+}
+#middleiam {
+  width: 50%;
+  margin-right: 20px;
+}
+#rightiam {
+  width: 25%;
+}
+
+/**************************/
+/* I do CSS */
+
+#containerido {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#leftido {
+  width: 50%;
+  margin-right: 20px;
+}
+
+#rightido {
+  width: 50%;
+}
+
+/********* SIDE BY SIDE *****************/
+#side2side {
+  display: flex;
+}
+#leftSide {
+  width: 50%;
+  margin-right: 20px;
+}
+
+#rightSide {
+  width: 50%;
+}
+/********* SIDE BY SIDE *****************/
+
+
+#exp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#lexp {
+  width: 25%;
+  margin-right: 20px;
+}
+
+#mexp {
+  width: 50%;
+  margin-right: 20px;
+}
+
+#rexp {
+  width: 25%;
+}
+
+#url {
+  color: deepPink;
+}
+/*************************/
+
+body {
+    background-color: black;
+}
+
+p {
+	font-family: "Menlo", Menlo, AppleGothic, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 26px;
+  color: pink;
+}
+
+h3 {
+	font-family: "Menlo", Menlo, AppleGothic, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+  color: pink;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e589ae;
+    margin: 0em 0;
+    padding: 0;
+}
+
+a:link {
+    color: fuchsia;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: fuchsia;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: deepPink;
+    background-color: transparent;
+    /*text-decoration: underline;*/
+}
+
+a.target:hover {
+    color: deepPink;
+}
+
+li {
+  list-style-type: none;
+}
+
+.fa-github:hover {
+    color: deepPink;
+}
+
+.fa-linkedin:hover {
+    color: deepPink;
+}
+
+.fa-instagram:hover {
+    color: deepPink;
+}
+
+.fa-wordpress:hover {
+    color: deepPink;
+}
+
+.fa-youtube-play:hover {
+    color: deepPink;
+}
+
+.fa-file-text:hover {
+    color: deepPink;
+}

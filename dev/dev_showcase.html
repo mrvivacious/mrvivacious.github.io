@@ -1,17 +1,133 @@
+<!--
+Thank you,
+https://www.w3schools.com/howto/howto_css_parallax.asp
+https://www.w3schools.com/howto/howto_css_center-vertical.asp
+https://www.w3schools.com/CSS/css3_shadows.asp
+https://alligator.io/css/pure-css-parallax/
+
+ -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>S h o w c a s e</title>
 
-    <link href="styles_dev.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+    <!-- <link href="styles_dev.css" rel="stylesheet" type="text/css" /> -->
 
-    <p>
-      This page will hold different banner images and be a
-       cool parallax motion between banner images and app descriptions
-    </p>
+    <style>
+      body, html {
+        height: 100%;
+        background-color: white;
+        /* border: 0px; */
+        margin: 0px;
+
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+      }
+
+      .parallax {
+        /* The image used */
+        /* Set this using in-line CSS */
+        /* background-image: url("../pictures/banners/speedDial.png"); */
+
+        /* Set a specific height */
+        /* min-height: 950px; */
+        height: 100%;
+
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-size: contain;
+
+      }
+
+      /* The styling for the in-between divs */
+      .buffer {
+        height: 150px;
+        background-color: pink;
+        font-size: 36px;
+
+        border-radius: 30px;
+        border-color: red;
+      }
+
+      /* The styling for the text inside the divs */
+      .bufferText {
+        color: black;
+        margin: 0px;
+        font-size: 36px;
+
+        transform: translateY(100%);
+      }
+    </style>
+  </head>
+  <body align="center">
+
+    <div class="parallax"
+         style="height:130%; background-image: url();">
+    </div>
+
+    <!-- <div class="buffer">
+      <p class="bufferText">
+        <em>A message for you,</em>
+      </p>
+    </div> -->
+
+    <div class="parallax"
+         style="height:80%; background-image: url(https://mrvivacious.github.io/pictures/magicalMessages.png);">
+    </div>
+
+
+    <div class="parallax"
+         style="height:70%; background-image: url();">
+    </div>
+
+    <!-- <div class="buffer">
+      <p class="bufferText">
+        Browse and post as you please ~
+      </p>
+    </div> -->
+
+    <div class="parallax"
+         style="background-image: url(https://mrvivacious.github.io/pictures/banners/likeFree.jpg);">
+    </div>
+
+    <!-- <div class="buffer">
+      <p class="bufferText">
+        First open-source algorithm
+      </p>
+    </div> -->
+
+        <div class="parallax"
+             style="height:70%; background-image: url();">
+        </div>
+
+    <div class="parallax"
+         style="background-image: url(https://mrvivacious.github.io/pictures/banners/porNo.png);">
+    </div>
+
+    <!-- <div class="buffer">
+      <p class="bufferText">
+        Help, faster
+      </p>
+    </div> -->
+
+
+        <div class="parallax"
+             style="height:70%; background-image: url();">
+        </div>
+
+    <div class="parallax"
+         style="background-image: url(https://mrvivacious.github.io/pictures/banners/speedDial.png);">
+    </div>
+
+    <div class="parallax"
+         style="height:130%; background-image: url();">
+    </div>
+
 
   </body>
 </html>

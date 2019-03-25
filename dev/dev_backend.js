@@ -7,5 +7,5 @@ for (let i = 0; i < status.length; i++) {
   let text = stat.innerText.toLowerCase();
 
   // Color the status text accordingly
-  (text === "dead") ? stat.style.color = "red" : stat.style.color = "green";
+  (text === "dead") ? stat.style.color = "red" : stat.style.color = "lightgreen";
 }

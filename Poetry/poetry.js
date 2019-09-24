@@ -2,6 +2,8 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['September 24 2019', 'Linus', 'If my words got you hot\nMy touch will have you\nSweating\n\nIf my touch has you sweating\nMy embrace will have you\nPanting\n\nIf my embrace has you panting\nLet\'s start\n\nDating.'],
+  ['September 24 2019', 'In my ears ring loud forever, in my mind, forget never', 'Questions of anxiety?\nI answer by\nActing.\nMoods of existentialism?\nI silence by\nExisting.\n\n...\n\nYou, who stands in the way of my fullest self-expression and comfort with myself –– begone.\nI express myself to the fullest for I have worked to understand my self.'],
   ['September 23 2019', 'Last time I didn\'t have the idea but next time I\'m at the theatre with a girl it\'s on sight', 'Dammmmmmm you didn\'t need to dress so well, you know I can\'t see you after they turn the lights off in the theatre, remember?\nDon\'t get me wrong,\nthough...\n' +
     'I have this movie ticket but I\'d be happy to spend the next two hours with my\neyes\nin\nyours.'],
   ['September 22 2019', 'Snowy', 'Dog happily eats off the floor\nI am not so willing to eat off the floor\nThe difference: I was taught to eat from a plate and the dog was taught to eat from the floor\n\n' +

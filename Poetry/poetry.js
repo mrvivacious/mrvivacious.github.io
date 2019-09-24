@@ -2,6 +2,10 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['September 23 2019', 'Last time I didn\'t have the idea but next time I\'m at the theatre with a girl it\'s on sight', 'Dammmmmmm you didn\'t need to dress so well, you know I can\'t see you after they turn the lights off in the theatre, remember?\nDon\'t get me wrong,\nthough...\n' +
+    'I have this movie ticket but I\'d be happy to spend the next two hours with my\neyes\nin\nyours.'],
+  ['September 22 2019', 'Snowy', 'Dog happily eats off the floor\nI am not so willing to eat off the floor\nThe difference: I was taught to eat from a plate and the dog was taught to eat from the floor\n\n' +
+    'What other parts of me stem from teaching as opposed to my own experiences?'],
   ['September 10 2019', 'I state:', 'When I die, bury my body at Siebel, and with my heart and brain, cut them into pieces and bury them in the countries where my apps have been downloaded'],
   ['September 10 2019', 'Jihoon', 'It had been two years since I last saw you\n\nOne day, one look, one embrace,\n\nI no longer have to miss you.'],
   ['September 7 2019', 'Where do you see yourself in five years?', 'Five years from now, find me in an aisle at the local grocery store, tongue deep in my girl\'s mouth next to a cart filled with children\'s cereals (for me, of course)'],

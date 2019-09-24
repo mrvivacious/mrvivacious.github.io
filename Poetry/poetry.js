@@ -115,7 +115,7 @@ function main() {
     let hr = document.createElement('hr');
 
     poemObject.appendChild(text);
-    poemObject.id = "poemTitle";
+    poemObject.id = 'poemTitle';
 
     div_poems.appendChild(poemObject);
 
@@ -151,4 +151,31 @@ function main() {
 }
 
 main();
+
+// If post 8 pm, switch on dark mode
+if (new Date().getHours() > 20) {
+  // Recolor the title texts
+  document.getElementsByTagName('h3')[0].style.color = 'blanchedAlmond';
+  document.getElementsByTagName('h3')[1].style.color = 'blanchedAlmond';
+
+  // Recolor the page background
+  document.body.style.background = 'black';
+
+  // Recolor all paragraphs
+  let p = document.getElementsByTagName('p');
+
+  for (let i = 0; p[i]; i++) {
+    p[i].style.color = 'blanchedAlmond';
+  }
+
+  // Recolor the poems
+  let spans = document.getElementsByTagName('span');
+
+  for (let i = 0; spans[i]; i++) {
+    if (spans[i].id === 'poem') {
+      spans[i].style.color = 'blanchedAlmond';
+    }
+  }
+}
+
 // autoReload(); // Great to avoid manual refresh

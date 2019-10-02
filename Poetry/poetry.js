@@ -2,6 +2,10 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['September 30 2019', 'By heart', 'More for me than for you, for the more I can be me, the more I can enjoy with you.'],
+  ['September 30 2019', 'A she for this he', 'Sorry\nYou can\'t stay in my head any longer\nI enjoy the thought of you and us\nI miss you a lot too.\nIt\'s that, I\'m not going to see you for who knows how long\nWe will meet again, time and place to be announced after the fact\n' +
+    'I just can\'t support you in the home that is my mind\nWe\'re overbooked -- I barely have room for me\nI\'ll see you around. Someday.\nI\'ll work hard and try to mature and grow in different parts of my life and try new things\n' +
+    'At the very least, the next time we meet, you can be proud of how far I\'ve come\n\nMy friend.'],
   ['September 27 2019', 'Marcus', 'The turn is yours, but the pleasure is mine'],
   ['September 26 2019', 'Jealousy', 'Not a good feeling at first\nHowever you will realize\nJealousy is an indicator that you still have unrealized potential\n\nGo get it done, or remember why you stopped caring in the first place and go focus on that which you do desire'],
   ['September 25 2019', 'Fuck outta here', 'The time\'s always been here\nI just burned it earlier on miscellaneous shit\n\nNow, lemme burn it on my stuffs before I do miscellaneous things'],

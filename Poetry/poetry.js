@@ -160,7 +160,7 @@ function main() {
 main();
 
 // If post 8 pm, switch on dark mode
-if (new Date().getHours() < 8 || new Date().getHours() > 20) {
+if (new Date().getHours() <= 8 || new Date().getHours() >= 20) {
   // Recolor the title texts
   document.getElementsByTagName('h3')[0].style.color = 'blanchedAlmond';
   document.getElementsByTagName('h3')[1].style.color = 'blanchedAlmond';

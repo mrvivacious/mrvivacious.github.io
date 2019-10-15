@@ -2,6 +2,13 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['October 13 2019', 'Snack', 'You look good\nYou smell good\nAre you a snack, are you food?\nI just wanna know,\n\nDo you taste good?\n\n' +
+    'Oh, you have to go now?\nDo you have to go, now?\nWhy do when you could\n\nCome\nWith me\n\nCome with me to a place\nA place for only you and me\nOnly\n\nYou and me\n\n' +
+    'My style\nYou could say\nIs tongue-in-cheek, but\nreally, I wanna put\nmy\n\nTongue\nin\nYour\nCheek\n\nTell me, now, how it\nTastes\nMy tongue,\nMy tongue between your cheeks,\n\nMy tongue between your\nteeth\n\n' +
+    'Fantasy\nThis scene\nI daydream\nThe actress and the actor\nRespectively you and me\n\nWill this be something\nI shall see\nWith you...\n...\nMaybe, I don\'t know...\nThe thought of you and me is maybe something with which you disagree\n' +
+    'If you read this,\nThe girl I wanna see,\nHurry and reject me, so that I can reclaim my thoughts and my life can proceed,\nOr like, fucking, message me\nFor knowing that you\nmiss me\nWill feel so\nlovely\n' +
+    'And if I don\'t hear anything\nThen I\'ll\nAs I\'ve been\nContinue to roam\n\nThe body of a human\nOperated by\nA\nLove\nZom\nbie'],
+  ['October 11 2019', 'Wife TBD', 'I wanna\nSee you\nGreet you\nMeet you\nWant you\n\nDate you\n\nHug you\n\nKiss you\n\nLove you\n\nFuck you\n\nHold you\n\nWife you\n\nMarry you.\n\n\n\nSee you ~'],
   ['September 30 2019', 'By heart', 'More for me than for you, for the more I can be me, the more I can enjoy with you.'],
   ['September 30 2019', 'A she for this he', 'Sorry\nYou can\'t stay in my head any longer\nI enjoy the thought of you and us\nI miss you a lot too.\nIt\'s that, I\'m not going to see you for who knows how long\nWe will meet again, time and place to be announced after the fact\n' +
     'I just can\'t support you in the home that is my mind\nWe\'re overbooked -- I barely have room for me\nI\'ll see you around. Someday.\nI\'ll work hard and try to mature and grow in different parts of my life and try new things\n' +

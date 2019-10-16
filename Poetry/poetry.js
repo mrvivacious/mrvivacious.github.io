@@ -2,6 +2,11 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['October 16 2019', 'I\'m livid', 'The cold air kisses my face\nIf only it was you, but you\'re not around\nNot even in town, nor in state\nWhat you\'re upto and how you\'ve been\nIs all that I think about\n\n' +
+    'It just got cold and we\'ve just entered fall\nLong since, however, I\'ve fallen for you\nDance in these leaves and pose under trees\nCome to campus, I wanna put my hoodies on you\n\n' +
+    'Rhyming is hard fuck it\nI want you, but I won\'t let this desire consume my time for school or friends\nI don\'t wanna help my feelings, but I can\'t share a moment with you, so I\'m going to temporarily\n' +
+    'Put you on hold\nYou are sensible and would probably offer the same advice\nI think I love you, or so, but\nThese next reps are for me\nI sit you out\nI\'ll catch you another time, probably catch these feelings again too\n\n' +
+    'From your admirer\n\nMissing you ~'],
   ['October 13 2019', 'Snack', 'You look good\nYou smell good\nAre you a snack, are you food?\nI just wanna know,\n\nDo you taste good?\n\n' +
     'Oh, you have to go now?\nDo you have to go, now?\nWhy do when you could\n\nCome\nWith me\n\nCome with me to a place\nA place for only you and me\nOnly\n\nYou and me\n\n' +
     'My style\nYou could say\nIs tongue-in-cheek, but\nreally, I wanna put\nmy\n\nTongue\nin\nYour\nCheek\n\nTell me, now, how it\nTastes\nMy tongue,\nMy tongue between your cheeks,\n\nMy tongue between your\nteeth\n\n' +

@@ -2,6 +2,10 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['October 17 2019', 'Honey on my bread', 'Throw my transcript on her chest\nCall that, double Ds\nNow lemme speak with some respect\nEnough is a flat chest to please me\n' +
+    'Girl in my future, wife eventually\nWhisper in my ear, your fantasies\nRun this tongue across your neck\nThe variations in your breath will seduce me\n' +
+    'Feign a kiss, or two, even three\nYou already know I enjoy it, when you tease me\nHoney of my life, loving me is for free\nAs for a relationship\nDon\'t expect any carry from me\n' +
+    'I\'m looking for a lady who can operate independently\nAnd I\nEqually\nOffer myself and\nAll of me\nHoney of my life\nI know you wanna meet me\nNo need to say it twice\nThe specificsof our development\nI just have to wait to see'],
   ['October 16 2019', 'I\'m livid', 'The cold air kisses my face\nIf only it was you, but you\'re not around\nNot even in town, nor in state\nWhat you\'re upto and how you\'ve been\nIs all that I think about\n\n' +
     'It just got cold and we\'ve just entered fall\nLong since, however, I\'ve fallen for you\nDance in these leaves and pose under trees\nCome to campus, I wanna put my hoodies on you\n\n' +
     'Rhyming is hard fuck it\nI want you, but I won\'t let this desire consume my time for school or friends\nI don\'t wanna help my feelings, but I can\'t share a moment with you, so I\'m going to temporarily\n' +

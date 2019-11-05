@@ -4,7 +4,7 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
-  ['November 4 2019', 'Deepika', 'If I didn\'t want you, I wouldn\'t keep replaying that night with you in my head\n' +
+  ['November 4 2019', 'D', 'If I didn\'t want you, I wouldn\'t keep replaying that night with you in my head\n' +
     'If I didn\'t want you, I wouldn\'t keep up at night with thoughts of you on my bed\n' +
     'If I didn\'t want you, I wouldn\'t keep wondering what it\'d be like to share our bodies in bed\n' +
     'If I didn\'t want you, I wouldn\'t keep telling myself I shouldn\'t ask you out because I don\'t know what lies ahead\n' +
@@ -129,7 +129,7 @@ const poems = [
   ['July 19 2019', 'What\'s this?', 'There\'s plenty of oxygen, but I\'m suffocating'],
   ['July 18 2019', 'Close-call', 'My feet are green, therefore I\'ve been on Green Street'],
   ['July 17 2019', 'Journal', 'The books with the blank pages end up having the most interesting stories.'],
-  ['July 17 2019', 'Shravya', 'Is your genome\nATCG,\nbecause you are\nA\nTerrificly-\nCute\nGirl'],
+  ['July 17 2019', 'S', 'Is your genome\nATCG,\nbecause you are\nA\nTerrificly-\nCute\nGirl'],
   ['July 16 2019', 'Friend', 'I wouldn\'t sweat more physics if it meant that I could keep coming home to you'],
   ['July 15 2019', 'Why do you insist?', 'Of all times, now? Of all places, here? How and why do you come? How and when will you leave?\n...Well, since you\'re here, let\'s share the time to figure out what you need.'],
   ['July 7 2019', 'Goddammit I wrote June 7 in my journal when it was July 7 lmao wtf', 'Let us be optimistic and believe that we shall live for 100 years, for even one day of vigor and peace is healthier than one hundred years drowned in a fear of death.'],

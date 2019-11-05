@@ -9,7 +9,7 @@ const poems = [
     'If I didn\'t want you, I wouldn\'t keep wondering what it\'d be like to share our bodies in bed\n' +
     'If I didn\'t want you, I wouldn\'t keep telling myself I shouldn\'t ask you out because I don\'t know what lies ahead\n' +
     'If I didn\'t want you, I wouldn\'t keep talking about you with all these friends on all these threads\n' +
-    'If I didn\'t want you, I wouldn\'t keep considering that regardless of what happenes between us, I\'ll soon be dead\n' +
+    'If I didn\'t want you, I wouldn\'t keep considering that regardless of what happens between us, I\'ll soon be dead\n' +
     'My friend\n' +
     'If I didn\'t want you, I wouldn\'t keep bending my mind\ninto this into that\n' +
     'To stop myself from asking you to be mine\n' +
@@ -24,18 +24,18 @@ const poems = [
     'you to figure out.'
   ],
   ['October 29 2019', 'Fuck the milk best buy date was two days ago lol', 'Ahhh\nThe milk is the same color as my skin\nI mixed way too much choco-\nWait\nThis tastes pretty good\nChocolate milk'],
-  ['October 29 2019', 'Call me cs + astronomy, now come drop thatassonme', 'I wanna fuck this girl\nCan\'t stop thinking about\nPutting my tongue in her mouth\n\n' +
-    'Put your fingers between mine, girl\nIntertwined, interlaced...do you dress your skin in lace?\nPut it in my mouth and I\'ll pull it off, no doubt...come here, let\'s shrink this space\n\n' +
-    'I feel so comfortable with you, girl\nOur last kiss was practice\nMy next lip, you\'ll catch me at my bestest\n\nI look into your eyes, you\'ll put me in arrest\nTake me home and undress\n' +
-    'Come over and you\'ll find, my bed has no sheets\nYet that won\'t stop me from giving you this meat\nLet\'s date, I insist\nA relationship, I desire to exist\nPlay with me, let\'s make bliss\n' +
-    'While I bite your skin, while I bite your lips\nWhatever your past, I don\'t care, I won\'t prejudice\nAs for mine...I\'ve grown and I\'m growing, in peace it rests, in peace I rest\n' +
-    'Right now, it\'s just you and me\nHere on out, let our worlds see\nThis story...your initials X VB\n\nNow come around, let\'s go around town\n' +
-    'Let\'s go home, show me your shade of brown\nLet\'s go home,\nI\'ll show you this brown\n\nPut me in your pussy, and your spit in my mouth so juicy\n' +
-    'Put a tit in my mouth, I don\'t care which side, I ain\'t choosey\nPin you up against this wall, come feel my all\nCome with your all, come until my dick refuses to grow tall\n' +
-    'Throw this hand on your clit\nUnleash the trigger in this finger\nI can\'t help myself,\nI just wanna itch her\nThrow your hand on my head\nAnd drown me in your body\n' +
-    'My final words?\nMy tongue going sloppy\n\nFinally, I lay, dead on this bed\nDon\'t sweat my last supper, rest assured I was well fed\nThis journey comes to an end, nothing more ahead\n' +
-    'A chalk outline under her tush\nMy grave? Find my bone in her bush.'
-  ],
+  // ['October 29 2019', 'Call me cs + astronomy, now come drop thatassonme', 'I wanna fuck this girl\nCan\'t stop thinking about\nPutting my tongue in her mouth\n\n' +
+  //   'Put your fingers between mine, girl\nIntertwined, interlaced...do you dress your skin in lace?\nPut it in my mouth and I\'ll pull it off, no doubt...come here, let\'s shrink this space\n\n' +
+  //   'I feel so comfortable with you, girl\nOur last kiss was practice\nMy next lip, you\'ll catch me at my bestest\n\nI look into your eyes, you\'ll put me in arrest\nTake me home and undress\n' +
+  //   'Come over and you\'ll find, my bed has no sheets\nYet that won\'t stop me from giving you this meat\nLet\'s date, I insist\nA relationship, I desire to exist\nPlay with me, let\'s make bliss\n' +
+  //   'While I bite your skin, while I bite your lips\nWhatever your past, I don\'t care, I won\'t prejudice\nAs for mine...I\'ve grown and I\'m growing, in peace it rests, in peace I rest\n' +
+  //   'Right now, it\'s just you and me\nHere on out, let our worlds see\nThis story...your initials X VB\n\nNow come around, let\'s go around town\n' +
+  //   'Let\'s go home, show me your shade of brown\nLet\'s go home,\nI\'ll show you this brown\n\nPut me in your pussy, and your spit in my mouth so juicy\n' +
+  //   'Put a tit in my mouth, I don\'t care which side, I ain\'t choosey\nPin you up against this wall, come feel my all\nCome with your all, come until my dick refuses to grow tall\n' +
+  //   'Throw this hand on your clit\nUnleash the trigger in this finger\nI can\'t help myself,\nI just wanna itch her\nThrow your hand on my head\nAnd drown me in your body\n' +
+  //   'My final words?\nMy tongue going sloppy\n\nFinally, I lay, dead on this bed\nDon\'t sweat my last supper, rest assured I was well fed\nThis journey comes to an end, nothing more ahead\n' +
+  //   'A chalk outline under her tush\nMy grave? Find my bone in her bush.'
+  // ],
   ['October 23 2019', 'Weathered', 'My style is too hot for this cold weather'],
   ['October 21 2019', 'Comparison + ignoring my self', 'I don\'t sit and wonder if my favorite color is good or bad, so why do I scrutinize my personality?'],
   ['October 19 2019', '10-18-19', 'Anger is not something to ignore\nAnger shows that something ain\'t right\n' +

@@ -4,6 +4,33 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['November 6 2019', 'Show me how it heals', 'I don\'t need your approval to say yes\n' +
+    'I don\'t need your permission to say no\n' +
+    'Right now, it\'s just me\n' +
+    'I don\'t know about the future, I\'ll know when it gets here\n' +
+    'Until then,\n' +
+    'It\'s just me\n' +
+    'The past? I can\'t comprehend, right now isn\'t the past\n' +
+    'Right now, it\'s just me\n' +
+    'What are my goals\n' +
+    'What is my personality\n' +
+    'What are my hobbies\n' +
+    'I don\'t know, you are the observer, you tell me\n' +
+    'I only do that which my life has taught me' 
+  ],
+  ['November 6 2019', 'UIUC roads please relax thanks', 'I only saw the whites of her eyes\n' +
+    'Was she smiling or frowning or anything-in-betweening, I couldn\'t tell ya, not gonna lie\n' +
+    'For it was dark\n' +
+    'I\'m with my homie in his car\n' +
+    'We\'re driving by Scott park\n' +
+    'Why were you on the road\n' +
+    'You could\'ve been hit smh\n' +
+    'Your jacket was dark, we barely saw shit\n' +
+    'One little slip and you\'d be in bandages\n' +
+    'Use the crosswalk you pedestrian\n' +
+    'Or wear something bright\n' +
+    'Or don\'t choose to walk when we\'re right by'
+  ],
   ['November 4 2019', 'D', 'If I didn\'t want you, I wouldn\'t keep replaying that night with you in my head\n' +
     'If I didn\'t want you, I wouldn\'t keep up at night with thoughts of you on my bed\n' +
     'If I didn\'t want you, I wouldn\'t keep wondering what it\'d be like to share our bodies in bed\n' +

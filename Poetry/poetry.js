@@ -4,6 +4,27 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  // ['November 7 2019', 'I met this boy', 'I am not sure, where to start, I will just start ' +
+  //   'with what I feel in my heart\n' +
+  //   'I\'ll start with his eyes\nHis beautiful eyes\n' +
+  //   'I like when he looks at me with his half-open eyelids covering the tops of his pupils\n' +
+  //   'It\'s a gentle gaze, and he makes me shy when adds a small smile to that face\n' +
+  //   'His black chain on his brown chest\nThat gold jewelry sitting on his soft neck\n' +
+  //   'The pieces in his ears aren\'t the same\nPeople ask "why?"\n"My style" he says, but he doesn\'t need to explain\n' +
+  //   'For he wears that jewelry not for them, but\nFor him\n' +
+  //   'I touch his jewelry, I touch his ears, I touch his hair\nI explore everywhere\n' +
+  //   'The skin on his skull, I observe in full\nFind me biting his lips, find me giving them a little pull\n' +
+  //   'Often, we greet\nLess often, we meet\nI arrive\nHe comes\nIt\'s interesting for me, hearing him breathe\n' +
+  //   'After a moment, he\'ll stop curling those feet\n' +
+  //   'He open his mouth\nHe laughs so loud\nMy mom has said something like...\n' +
+  //   '"Those who laugh the loudest, have suffered the most"\nMom shut the hell up, lmao\n' +
+  //   'Sure he\'s had some troubles, but he is so much more\nThough it\'s sometimes hard for him to see it, but he\'s no poor soul\n' +
+  //   'Out of that same mouth, endless jokes pour\nHe has no interest in being a comedian, we\'ve talked about our goals\n' +
+  //   'Yet in his idle time he\'ll review, he\'ll write, it\'s certain he desires for more\nWhat for?\n' +
+  //   'The experience of laugh, even after having so many in store\nSeeing them change the shapes of their eyes, ' +
+  //   'their teeth showing through their smiles, and all the while, their faces lit up so bright\n' +
+  //   'Really, it\'s just this, that brings him delight\n'
+  // ],
   ['November 6 2019', 'Show me how it heals', 'I don\'t need your approval to say yes\n' +
     'I don\'t need your permission to say no\n' +
     'Right now, it\'s just me\n' +
@@ -16,7 +37,7 @@ const poems = [
     'What is my personality\n' +
     'What are my hobbies\n' +
     'I don\'t know, you are the observer, you tell me\n' +
-    'I only do that which my life has taught me' 
+    'I only do that which my life has taught me'
   ],
   ['November 6 2019', 'UIUC roads please relax thanks', 'I only saw the whites of her eyes\n' +
     'Was she smiling or frowning or anything-in-betweening, I couldn\'t tell ya, not gonna lie\n' +
@@ -31,6 +52,7 @@ const poems = [
     'Or wear something bright\n' +
     'Or don\'t choose to walk when we\'re right by'
   ],
+  ['November 4 2019', 'Woosh', 'The creaks of your metal body from the kiss of this cold wind\nIt helps me breathe joyfully'],
   ['November 4 2019', 'D', 'If I didn\'t want you, I wouldn\'t keep replaying that night with you in my head\n' +
     'If I didn\'t want you, I wouldn\'t keep up at night with thoughts of you on my bed\n' +
     'If I didn\'t want you, I wouldn\'t keep wondering what it\'d be like to share our bodies in bed\n' +
@@ -46,9 +68,14 @@ const poems = [
     'I\'m done beating myself up...I\'m exhausted,\n' +
     'Lemme reach into my soul and pull out these feelings I wanna get lost in'
   ],
+  ['November 4 2019', 'Joonmin Kweon', 'The days that you try are the days that count'],
   ['November 3 2019', 'Nothing to gain nothing to lose just right now to enjoy', 'Our interaction is going to be a piece of each other\'s development, ' +
     'lemme try to make it a good piece...\n\nOne thing I can do for you, is accept you. That\'s the best thing I could do for you. Everything else is for ' +
     'you to figure out.'
+  ],
+  ['October 31 2019', 'Skyrim life DLC', 'I somehow caught a break from this storm inside me\n' +
+    'Once I caught a break from this storm inside me, I saw the snowflakes choreographing this cold storm outside me\n\n' +
+    'Now, I can join the snow in their chilled form'
   ],
   ['October 29 2019', 'Fuck the milk best buy date was two days ago lol', 'Ahhh\nThe milk is the same color as my skin\nI mixed way too much choco-\nWait\nThis tastes pretty good\nChocolate milk'],
   // ['October 29 2019', 'Call me cs + astronomy, now come drop thatassonme', 'I wanna fuck this girl\nCan\'t stop thinking about\nPutting my tongue in her mouth\n\n' +

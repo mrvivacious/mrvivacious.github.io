@@ -4,6 +4,16 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['November 13 2019', 'Brown body', 'I knew I\'d be disappointed if what I found wasn\'t hot\n' +
+    'I touched with my fingers, such smooth curves, I thought\n' +
+    'I brought my face close...the heat was definitely a nice change from the frost\n' +
+    'What to do with my tongue, I didn\'t really know where to start\n' +
+    'No plan of action but the one I\'d make up, no script, just this raw, developing plot\n' +
+    'I pushed my lips together and with my hand, I gave a little loft\n' +
+    'Time moving slow, I moved my head close and went after that which I sought\n' +
+    'I kissed\nI sucked\nI sipped\nThe chocolate milk really wasn\'t too hot\n\n' +
+    'Tonight, it looks like my tongue will be spared a burned spot'
+  ],
   ['November 8 2019', 'Bachelor\'s of liberal arts and sciences | Master\'s of bations', 'I open my mouth, strange noises come out (what am I doing, what am I feeling)\n' +
     'I\'m touching myself, my self-control has been shelved (what am I doing, what am I feeling)\n' +
     'My hand on my hip, my finger on the tip (what am I doing, what am I feeling)\n' +
@@ -274,7 +284,7 @@ function main() {
 
     // Create and append the date
     poemObject = document.createElement('span');
-    text = document.createTextNode(poemDate);
+    text = document.createTextNode(poemDate + ' | Vivek Bhookya');
 
     poemObject.appendChild(text);
     poemObject.id = 'poemDate';

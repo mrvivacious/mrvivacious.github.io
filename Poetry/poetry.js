@@ -4,27 +4,43 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
-  // ['November 7 2019', 'I met this boy', 'I am not sure, where to start, I will just start ' +
-  //   'with what I feel in my heart\n' +
-  //   'I\'ll start with his eyes\nHis beautiful eyes\n' +
-  //   'I like when he looks at me with his half-open eyelids covering the tops of his pupils\n' +
-  //   'It\'s a gentle gaze, and he makes me shy when adds a small smile to that face\n' +
-  //   'His black chain on his brown chest\nThat gold jewelry sitting on his soft neck\n' +
-  //   'The pieces in his ears aren\'t the same\nPeople ask "why?"\n"My style" he says, but he doesn\'t need to explain\n' +
-  //   'For he wears that jewelry not for them, but\nFor him\n' +
-  //   'I touch his jewelry, I touch his ears, I touch his hair\nI explore everywhere\n' +
-  //   'The skin on his skull, I observe in full\nFind me biting his lips, find me giving them a little pull\n' +
-  //   'Often, we greet\nLess often, we meet\nI arrive\nHe comes\nIt\'s interesting for me, hearing him breathe\n' +
-  //   'After a moment, he\'ll stop curling those feet\n' +
-  //   'He open his mouth\nHe laughs so loud\nMy mom has said something like...\n' +
-  //   '"Those who laugh the loudest, have suffered the most"\nMom shut the hell up, lmao\n' +
-  //   'Sure he\'s had some troubles, but he is so much more\nThough it\'s sometimes hard for him to see it, but he\'s no poor soul\n' +
-  //   'Out of that same mouth, endless jokes pour\nHe has no interest in being a comedian, we\'ve talked about our goals\n' +
-  //   'Yet in his idle time he\'ll review, he\'ll write, it\'s certain he desires for more\nWhat for?\n' +
-  //   'The experience of laugh, even after having so many in store\nSeeing them change the shapes of their eyes, ' +
-  //   'their teeth showing through their smiles, and all the while, their faces lit up so bright\n' +
-  //   'Really, it\'s just this, that brings him delight\n'
-  // ],
+  ['November 8 2019', 'Bachelor\'s of liberal arts and sciences | Master\'s of bations', 'I open my mouth, strange noises come out (what am I doing, what am I feeling)\n' +
+    'I\'m touching myself, my self-control has been shelved (what am I doing, what am I feeling)\n' +
+    'My hand on my hip, my finger on the tip (what am I doing, what am I feeling)\n' +
+    'I don\'t wanna pull out, but it\'s tempting to slip (what am I doing, what am I feeling)\n' +
+    'How did I get here (how), how was this inspired\n' +
+    'And why am I stressing, I\'m starting to perspire (wow)\n' +
+    'Good grief, show me my desire (show me)\n' +
+    'My pants on the ground, my eyes on the ceiling (oh homie)\n' +
+    'My wrist is clicking, now my body is leaking (show me)\n' +
+    'This ain\'t something anyone needs to be seeing (oooh)\n' +
+    'Unless you\'re my girl\n...what am I doing, what am I feeling\n' +
+    'But then I\'d be spilling between me and you\n' +
+    'I\'m not lying, I don\'t know what to do\n' +
+    'My feeling that they labeled "sexual", this is the first time I\'ve stopped and looked into\n' +
+    'What am I doing, let\'s check out what I\'m feeling'
+  ],
+  ['November 7 2019', 'I met this boy', 'I am not sure, where to start, I will just start ' +
+    'with what I feel in my heart\n' +
+    'I\'ll start with his eyes\nHis beautiful eyes\n' +
+    'I like when he looks at me with his half-open eyelids covering the tops of his pupils\n' +
+    'It\'s a gentle gaze, and he makes me shy when adds a small smile to that face\n' +
+    'His black chain on his brown chest\nThat gold jewelry sitting on his soft neck\n' +
+    'The pieces in his ears aren\'t the same\nPeople ask "why?"\n"My style" he says, but he doesn\'t need to explain\n' +
+    'For he wears that jewelry not for them, but\nFor him\n' +
+    'I touch his jewelry, I touch his ears, I touch his hair\nI explore everywhere\n' +
+    'The skin on his skull, I observe in full\nFind me biting his lips, find me giving them a little pull\n' +
+    'Often, we greet\nLess often, we meet\nI arrive\nHe comes\nIt\'s interesting for me, hearing him breathe\n' +
+    'After a moment, he\'ll stop curling those feet\n' +
+    'He open his mouth\nHe laughs so loud\nMy mom has said something like...\n' +
+    '"Those who laugh the loudest, have suffered the most"\nMom shut the hell up, lmao\n' +
+    'Sure he\'s had some troubles, but he is so much more\nThough it\'s sometimes hard for him to see it, but he\'s no poor soul\n' +
+    'Out of that same mouth, endless jokes pour\nHe has no interest in being a comedian, we\'ve talked about our goals\n' +
+    'Yet in his idle time he\'ll review, he\'ll write, it\'s certain he desires for more\nWhat for?\n' +
+    'The experience of laugh, even after having so many in store\nSeeing them change the shapes of their eyes, ' +
+    'their teeth showing through their smiles, and all the while, their faces lit up so bright\n' +
+    'Really, it\'s just this, that brings him delight\n'
+  ],
   ['November 6 2019', 'Show me how it heals', 'I don\'t need your approval to say yes\n' +
     'I don\'t need your permission to say no\n' +
     'Right now, it\'s just me\n' +

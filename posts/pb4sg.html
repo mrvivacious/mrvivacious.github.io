@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>What I think</title>
+  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="http://clipartix.com/wp-content/uploads/2017/06/Sunshine-free-sun-clipart-clip-art-images-and-7.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div>
+
+    <p align="center"><img src="../pictures/kite5new.JPG" alt="Vivek looking at the sky" width=750 height=400
+        style='height: 100%; width: 100%; object-fit: contain'></p>
+
+<p align="center" style="font-size:350%;"><a href="../index.html" style="color:brown;">I think</a></p>
+
+<br>
+<hr>
+</div>
+
+<h3 align="center">Personal bad for social good | <span style="color:grey;">November 21th, 2019</span></h3>
+
+  <hr>
+
+  <div id="containeriam">
+
+          <div id="leftiam" align="center">
+          </div>
+
+          <div id="middleiam" align="center">
+
+              <!-- Post name, date posted, post, Vivek -->
+              <p align="left" style="font-size:300%;">Personal bad for social good</p>
+
+              <p align="left">Yeah what's good.
+              </p>
+              <p align="left">This is going to be about what it was like to write a porn blocker.
+              </p>
+              <p align="left">Maybe you don't want to read it because of the associated
+                themes and ideas, though I do encourage you to read this anyways.
+                Take a look inside my experiences without having to live through them.
+                See if you can stomach it, haha. We will have a good time.
+              </p>
+              <p align="left">This writing will be a sampler for me to gauge what
+                all I could put in a dedicated book. I want to write a book that's
+                easy and gentle to read, provides conversation into the experience,
+                shows sample code and other documents I collected while working on
+                the software...etc. It will be nice when I write this book :)
+              </p>
+              <p align="left">Anyways, yeah, I would not recommend writing a porn
+                blocker from scratch for anyone. Use mine, not because I want to
+                express how proud I am of my work, but because the difficulties I've
+                been facing after having gone through this process myself are very
+                hard to manage and not at all
+                "oh, this struggle is fine, it will build my character hooray :)" as other tribulations.
+              </p>
+              <p align="left">Not saying that what I will describe is impossible to move beyond
+                or live with or grow from...just saying that you are better off avoiding
+                the things that make you check out of life and really warp your
+                personality...etc.
+              </p>
+              <p align="left">In the spring of 2018, when I sat down and started work,
+                my thought was that the idea of a blocker that redirected users to
+                different, positive etc websites instead of a "Page blocked" screen
+                was definitely something I could do and am interesting in using.
+                Ongoing, I thought that, if I succeed and publish this app, maybe someone
+                else would also find benefit, and if this became true, that would be
+                really cool to me. I didn't think about the possible effects on the mind
+                of a child that daily exposure to pornography could have, ahahaha, but that's ok.
+              </p>
+              <p align="left">The first big challenge was gathering enough —— "enough" ——
+                porn sites to make known to the app. PorNo! reads a website's URL to determine if
+                the domain is a porn site domain. For PorNo! to provide more coverage, it needs
+                to have more domain names in its internal list. As a result, there was a decent amount of time
+                spent searching for lists of porn domains [from forums that wanted to provide banlists to
+                sites that ranked porn sites and in between, ahahaha].
+              </p>
+              <p align="left">Every day, new websites go live. New porn sites (or rather, sites that
+                mirror existing porn video from other sites) go live [possibly] every day as well.
+                Now, we see that for PorNo! to provide full coverage of the internet, the source code
+                needs to updated on a near-daily basis AFTER somehow finding these brand-new porn distributing
+                sites.
+              </p>
+              <p align="left">Searching for these sites would not be an easy process at all and
+                going further to update and publish a new release of PorNo! on the daily is just not at all a
+                feasible or desirable process. Consider that I was the only person working on the PorNo! software
+                (a few lovely friends helped with finding websites, never forget!), so all
+                foreseen responsibility would have to be taken up by me. I don't want to spend
+                time every single day hereonout engaging in the cultivating joy of looking for porn sites!
+              </p>
+              <p align="left">Yet at the same time, I didn't want PorNo! to fail to meet a user's need
+                when it could be helped. There exists some solution to this problem and I was going to find it,
+                because good god, a porn blocker that doesn't block porn is simply not doing its job.
+              </p>
+              <p align="left">Leaving out the episodes where I was angry and disappointed with why
+                porn sites will perennially take birth for a moment, an idea soon showed itself to me: let PorNo!
+                figure out what websites were pornographic and update itself on its own.
+              </p>
+              <p align="left">We reach the next challenge: speed. When a user types in a website and presses
+                the enter key to navigate to that website, a few things happen. First, the network that this device
+                is connected to attempts to navigate to the requested URL to see if, first of all, it exists.
+                If the URL domain doesn't exist, you will find your browser telling you that
+                it was unable to locate this address. Supposing that the URL requested does exist, the server
+                that hosts this website will begin sending information to your device.
+              </p>
+              <p align="left">Websites are built with HTML, CSS, JavaScript (and php, and...and...), and accessing websites is like
+                going to a library, looking for a particular book, and checking out that book. Your device
+                looks for what server (library) hosts the website (this particular book), and requests
+                the source code of that website so that your browser can show you the contents of that page (check out the book).
+              </p>
+              <p align="left">Software in the browser, such as a Chrome extension,
+                can read the data of a webpage before it is done loading, and coincidentally,
+                your device can also begin rendering the page as it is being downloaded. This is good for PorNo! because
+                it means that we can have access to a site's contents in addition to its URL for PorNo! to assess
+                the pornographic-ness of a website, and this is not so good for PorNo! because it means PorNo! is racing
+                against the browser's speed of loading the page's contents. Why is this a challenge? Imagine
+                that you are a person that is trying to reduce their porn consumption, yet you find yourself
+                still navigating to porn sites every now and then, being turned away and finding relief through PorNo!.
+                One of the sites you visit is written with barebones HTML and doesn't have a lot of overhead resources to load ——
+                this site will render much faster comparably and possibly show sensitive images / thumbnails before PorNo! redirects
+                (this is an anecdote and this issue has been fixed with the use of a hashmap as opposed to an array for storing
+                known URLs). As someone who is trying to avoid porn and is using software to help, seeing pornographic images
+                is not going to help your endeavors at all. This was a technical challenge and also something I
+                got frustrated over, as we were dealing in the realm of 3 millisecond computation speeds, a time range
+                I imagined would have been faster than the browser...
+              </p>
+              <p align="left">
+              </p>
+              <p align="left">
+              </p>
+              <p align="left">
+              </p>
+              <p align="left">tbd
+              </p>
+
+              <br>
+              <p align="left">Vivek</p>
+              <!-- $ end post -->
+
+    </div>
+
+<div id="rightiam" align="center"></div>
+
+</div>
+<!-- Close containeriam -->
+
+<br><br>
+
+  <p align="center">
+    <a href="">tbd</a> |
+    <a href="HappyBirthday.html">HappyBirthday</a>
+  </p>
+    <p align="center">
+      <a href="../ithink.html#2019" style="color:brown;">Contents</a>
+    </p>
+
+<br><br>
+
+
+<!-- http://fontawesome.io/icons/ -->
+<hr>
+<br>
+  <div>
+    <li align="center">
+      <a href="https://github.com/mrvivacious" target="_blank"><i class="fa fa-github" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://www.linkedin.com/in/vivek-bhookya-b9338013b/" target="_blank"<i class="fa fa-linkedin" style="font-size:24px; padding:5px"></i><a/>
+      <a href="https://instagram.com/mrvivacious" target="_blank"><i class="fa fa-instagram" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://bonafidegradehustlers.wordpress.com" target="_blank"><i class="fa fa-wordpress" style="font-size:24px; padding:5px"></i></a>
+      <a href="https://www.youtube.com/playlist?list=LLbXFsP9kfnG3cUVvuz2v6HA" target="_blank"><i class="fa fa-youtube-play" style="font-size:24px; padding:5px"></i></a>
+      <a href="../files/resume.pdf" target="_blank"><i class="fa fa-file-text" style="font-size:24px; padding:5px"></i></a>
+    </li>
+  </div>
+
+  <br>
+  <p align="center"><em>Thank you for visiting!</em><br>Vivek Bhookya</p>
+
+</body>
+</html>

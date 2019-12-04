@@ -4,6 +4,24 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  ['December 4 2019', 'Magical Message', 'Seek not that which fills you with ' +
+    'happiness, joy, passion...\n' +
+    'Seek instead to practice summoning the happines, joy, passion... inside of you ' +
+    'into that which you engage with'
+  ],
+  ['December 1 2019', 'December', 'The stars in the sky look\nso good\n' +
+    'The wind on my body feels\nso good\n' +
+    'The cold wood under my feet feels\nso good\n' +
+    'The smell of this fall season is just\nso good\n' +
+    '\nHappy to live in a place and a time where I can be here\n' +
+    '\nWhere are my friends, let\'s share in this\n' +
+    'Where is the wife in my future, let\'s embrace in this\n' +
+    '\nWhere are my senses of responsibility and duty, I\'ll do what I must to ' +
+    'protect this\n' +
+    'I\'ll do what I must to ensure\n' +
+    'That yet again\n' +
+    'I can live this'
+  ],
   ['November 13 2019', 'Brown body', 'I knew I\'d be disappointed if what I found wasn\'t hot\n' +
     'I touched with my fingers, such smooth curves, I thought\n' +
     'I brought my face close...the heat was definitely a nice change from the frost\n' +

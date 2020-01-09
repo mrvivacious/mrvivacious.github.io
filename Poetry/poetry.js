@@ -4,11 +4,37 @@
 // Each poem list is [title, date, body]
 // ['', '', ''],
 const poems = [
+  // ['December 7 2019', '[Unfinished] A dream', 'Why would one get mad, if a loved one was under this dream?\n' +
+  //   'Surround me in this feeling, drown in this delightful cream\n' +
+  //   'As if all the daydreams\nOf my past\nAnd all the night dreams\n' +
+  //   'That left me with such good feelings\nThey all simultaneously came true\n' +
+  //   'Every nice thing that could\'ve happened, did happen to me\n' +
+  //   'I see visions\nMy family is happy\nMy friends are happy\n' +
+  //   'I\'m being someone who no longer yearns, strives, for anything more, completely ' +
+  //     'appreciating what is already in store\n' +
+  //   'The manifestations of this feeling in my mind reveal a life I think I should accomplish ' +
+  //     'to really feel this feeling\n' +
+  //   '"I do have that body, I did love those girls, I now live with her as my wife, we do have those homes, we did do all that at those times..."'
+  // ],
+  ['December 7 2019', 'Hi', 'I listen to this song\nIt is a good feeling\n' +
+    'Not something new\nFor I have experienced it when sharing my life with you\n' +
+    'Gentle, peaceful, I feel at ease\nLet our paths collide, together we\'ll live in peace\n' +
+    'Your shy smile\nYou don\'t show me because you\'re shy\n' +
+    'I\'ll bother you about it next time\nYour shy smile will be worth all my while\n' +
+    'I don\'t know what you think of me\nYet in my head, I feel you always expect better of me\n' +
+    'I work on myself\nSo that when you get with me, you\'ll wanna channel that slut\n' +
+    'In myself I trust\nNever with me, shall you feel that I\'ve found rust'
+  ],
   ['December 4 2019', 'Magical Message', 'Seek not that which fills you with ' +
     'happiness, joy, passion...\n' +
     'Seek instead to practice summoning the happines, joy, passion... inside of you ' +
     'into that which you engage with'
   ],
+  // ['December 1 2019', '[Unfinished] Introspection', 'Reimagining the past until my brain runs out of gas\n' +
+  //   'Part of the reason why I don\'t do well in class\n' +
+  //   'Is the fact that I don\'t help myself when it comes to thinking about ass (lol joke)\n\n' +
+  //   'Reimagination fueled by temptation\nNo room to respect the decisions I made\n'
+  // ],
   ['December 1 2019', 'December', 'The stars in the sky look\nso good\n' +
     'The wind on my body feels\nso good\n' +
     'The cold wood under my feet feels\nso good\n' +
